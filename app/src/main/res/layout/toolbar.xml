@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:foreground="?android:attr/windowContentOverlay"
+    android:gravity="right"
+    android:minHeight="50dp"
+    local:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+<!--    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/label"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="Home"
+            android:visibility="gone"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/notifiClik"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/spin" />
+
+    </RelativeLayout>-->
+    <ImageView
+        android:id="@+id/notifiClik"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="end"
+        android:layout_marginRight="15dp"
+        android:visibility="visible"
+        android:background="@drawable/spin" />
+
+
+    <ImageView
+        android:id="@+id/imageViewRefreshId"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="end"
+        android:layout_marginEnd="20dp"
+        android:visibility="visible"
+        android:background="@drawable/refresh" />
+
+
+</android.support.v7.widget.Toolbar>

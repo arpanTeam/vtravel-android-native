@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/vtravel-android-native.iml" filepath="$PROJECT_DIR$/.idea/modules/vtravel-android-native.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/vtravel-android-native.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/vtravel-android-native.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/vtravel-android-native.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/vtravel-android-native.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/vtravel-android-native.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/vtravel-android-native.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/vtravel-android-native.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/vtravel-android-native.app.unitTest.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/pastTripsId"
+            android:icon="@drawable/trip"
+            android:title="Past Trips" />
+
+        <item
+            android:id="@+id/lay4"
+            android:icon="@drawable/feedback_title"
+            android:title="Give us feedback" />
+
+        <item
+            android:id="@+id/lay5"
+            android:icon="@drawable/review"
+            android:title="Rate this app"  />
+
+
+        <item
+            android:id="@+id/lay6"
+            android:icon="@drawable/terms_condition"
+            android:title="Terms and conditions"/>
+
+
+        <item
+            android:id="@+id/lay9"
+            android:icon="@drawable/web_icon"
+            android:title="www.airvistara.com"/>
+
+    </group>
+</menu>

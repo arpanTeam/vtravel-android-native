@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fafafa"
+    android:focusableInTouchMode="true">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+
+        <RelativeLayout
+            android:id="@+id/safeReach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/golden_round_shape"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/safeReachIV"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:tint="@color/colorPrimaryDark"
+                android:src="@drawable/safe_reach" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:id="@+id/safeReachedText"
+                android:layout_toRightOf="@+id/safeReachIV"
+                android:layout_marginLeft="10dp"
+                android:text="Reached Safe"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+<!--        <Button-->
+<!--            android:id="@+id/reachedSafe"-->
+<!--            android:layout_width="130dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_below="@+id/linearLayTopId"-->
+<!--            android:layout_marginBottom="5dp"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:layout_gravity="right"-->
+<!--            android:background="@color/golden"-->
+<!--            android:text="Reached Safely"-->
+<!--            android:textColor="@color/colorPrimaryDark" />-->
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RatingBar
+                android:id="@+id/ratingBar1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:theme="@style/RatingBarfeed"
+                android:layout_marginTop="45dp" />
+
+            <TextView
+                android:id="@+id/textTitleId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ratingBar1"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:text="What could be improved ?"
+                android:textColor="#69677E"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/linearLayTopId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textTitleId"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:weightSum="4">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="12dp"
+                    android:layout_weight="1"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <CheckedTextView
+                            android:id="@+id/ctv"
+                            android:layout_width="120dp"
+                            android:layout_height="35dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/check_indicator"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Courteous"
+                            android:textAlignment="gravity"
+                            android:textColor="@color/black"
+                            android:textSize="11sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <CheckedTextView
+                            android:id="@+id/btnDrivingId"
+                            android:layout_width="120dp"
+                            android:layout_height="35dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/check_indicator"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Driving Skills"
+                            android:textAlignment="gravity"
+                            android:textColor="@color/black"
+                            android:textSize="11sp" />
+
+                        <!--<Button-->
+                        <!--android:id = "@+id/btnDrivingId"-->
+                        <!--android:layout_width="120dp"-->
+                        <!--android:layout_height="35dp"-->
+                        <!--android:textSize="11sp"-->
+                        <!--android:elevation="6dp"-->
+                        <!--android:background="@drawable/btn_selector"-->
+                        <!--android:layout_centerInParent="true"-->
+                        <!--android:gravity="center"-->
+                        <!--android:textColor="#69677E"-->
+                        <!--android:text = "Driving"/>-->
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <CheckedTextView
+                            android:id="@+id/btnComfortId"
+                            android:layout_width="120dp"
+                            android:layout_height="35dp"
+                            android:textAlignment="gravity"
+                            android:textColor="@color/black"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/check_indicator"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Comfort"
+                            android:textSize="11sp" />
+
+                        <!--<Button-->
+                        <!--android:id = "@+id/btnComfortId"-->
+                        <!--android:layout_width="120dp"-->
+                        <!--android:layout_height="35dp"-->
+                        <!--android:background="@drawable/btn_selector"-->
+                        <!--android:textColor="#69677E"-->
+                        <!--android:textSize="11sp"-->
+                        <!--android:layout_centerInParent="true"-->
+                        <!--android:text = "Comfort"/>-->
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <CheckedTextView
+                            android:id="@+id/btnPickUpId"
+                            android:layout_width="120dp"
+                            android:layout_height="35dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/check_indicator"
+                            android:gravity="center"
+                            android:textAlignment="gravity"
+                            android:textColor="@color/black"
+                            android:padding="10dp"
+                            android:text="Timely Pickup"
+                            android:textSize="11sp" />
+                        <!--<Button-->
+                        <!--android:id = "@+id/btnPickUpId"-->
+                        <!--android:layout_width="120dp"-->
+                        <!--android:layout_height="35dp"-->
+                        <!--android:background="@drawable/btn_selector"-->
+                        <!--android:textColor="#69677E"-->
+                        <!--android:textSize="11sp"-->
+                        <!--android:layout_centerInParent="true"-->
+                        <!--android:text = "Pick Up"/>-->
+
+                    </RelativeLayout>
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <CheckedTextView
+                            android:id="@+id/btnCleanlinessId"
+                            android:layout_width="120dp"
+                            android:layout_height="35dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/check_indicator"
+                            android:gravity="center"
+                            android:textAlignment="gravity"
+                            android:textColor="@color/black"
+                            android:padding="10dp"
+                            android:text="Cleanliness"
+                            android:textSize="11sp" />
+                        <!--<Button-->
+                        <!--android:id = "@+id/btnCleanlinessId"-->
+                        <!--android:layout_width="120dp"-->
+                        <!--android:layout_height="35dp"-->
+                        <!--android:background="@drawable/btn_selector"-->
+                        <!--android:textColor="#69677E"-->
+                        <!--android:textSize="11sp"-->
+                        <!--android:layout_centerInParent="true"-->
+                        <!--android:text = "Cleanliness"/>-->
+
+                    </RelativeLayout>
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <CheckedTextView
+                            android:id="@+id/btnOthersId"
+                            android:layout_width="120dp"
+                            android:layout_height="35dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/check_indicator"
+                            android:gravity="center"
+                            android:textAlignment="gravity"
+                            android:textColor="@color/black"
+                            android:padding="10dp"
+                            android:text="Others"
+                            android:textSize="11sp"
+                            android:visibility="invisible"/>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/editFeedBackId"
+                            android:layout_width="250dp"
+                            android:layout_height="100dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/btn_shape"
+                            android:gravity="center"
+                            android:hint="Write Comment"
+                            android:textColorHint="#69677E"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSubmitId"
+                android:layout_width="200dp"
+                android:layout_height="44dp"
+                android:layout_below="@+id/linearLayTopId"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="40dp"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/signupbutton"
+                android:text="SUBMIT"
+                android:textColor="#ffffff" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

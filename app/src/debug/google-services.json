@@ -1,0 +1,356 @@
+{
+  "project_info": {
+    "project_number": "47842512707",
+    "firebase_url": "https://performics-analytics.firebaseio.com",
+    "project_id": "performics-analytics",
+    "storage_bucket": "performics-analytics.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:47842512707:android:f4a0fbb890f67a09",
+        "android_client_info": {
+          "package_name": "com.resultrix.performics.analytics"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "47842512707-tiipbljgmt5uk50bl3urm3cmikak3rp8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.resultrix.performics.analytics",
+            "certificate_hash": "5f4046e591f71e38d14707e30dc2d37559899fed"
+          }
+        },
+        {
+          "client_id": "47842512707-g9smlo7l8hf38f08km9t2unohb62ji5a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAG3wOlMjckcKwMtZfiaP8dlNfdFzjhfwk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "47842512707-b59h6k5pr2nv22oacs32ntelu4ni9nhc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "47842512707-4bsc63q9mu8qr3kq4ad15k1tonhmmcql.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.tsal.vistara",
+                "app_store_id": "992877072"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:47842512707:android:fde536c50fc9d60497e9f6",
+        "android_client_info": {
+          "package_name": "com.vistara.traveler"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "47842512707-g9smlo7l8hf38f08km9t2unohb62ji5a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAG3wOlMjckcKwMtZfiaP8dlNfdFzjhfwk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "47842512707-b59h6k5pr2nv22oacs32ntelu4ni9nhc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "47842512707-4bsc63q9mu8qr3kq4ad15k1tonhmmcql.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.tsal.vistara",
+                "app_store_id": "992877072"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:47842512707:android:5c2355bc46ae309197e9f6",
+        "android_client_info": {
+          "package_name": "com.vistara.traveler.uat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "47842512707-1t3d7ivfe9agojup60ifgljqfqe27sse.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vistara.traveler.uat",
+            "certificate_hash": "9f70d08f9afcec62e3a516742596bf93f506c908"
+          }
+        },
+        {
+          "client_id": "47842512707-7o4i5slqsfptbj7kuorfq9u1ubbng7cb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vistara.traveler.uat",
+            "certificate_hash": "ae2673a8b8faeac5fe402e53ddf0adee74c0984d"
+          }
+        },
+        {
+          "client_id": "47842512707-fliar1qastk7s9r4btl984r4snf7su33.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vistara.traveler.uat",
+            "certificate_hash": "73ef0c0ffb86ebc5f198b07c7eda3e851e8afea5"
+          }
+        },
+        {
+          "client_id": "47842512707-jj4avoo2cpr102179n7r7f79utout46e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vistara.traveler.uat",
+            "certificate_hash": "a2ef68b372e1df7ed26664e8b857db4a0e313b1d"
+          }
+        },
+        {
+          "client_id": "47842512707-nvjkf2i5nh8mgbrgqjbt75j6evreqngb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vistara.traveler.uat",
+            "certificate_hash": "b641096dd304b13a2df2bd758b853567942aef0f"
+          }
+        },
+        {
+          "client_id": "47842512707-t41lojjt5ej96jjk6mfuncin85qubah7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vistara.traveler.uat",
+            "certificate_hash": "bf8117f75d7b8f5232632aa677981b8683531e9f"
+          }
+        },
+        {
+          "client_id": "47842512707-g9smlo7l8hf38f08km9t2unohb62ji5a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAG3wOlMjckcKwMtZfiaP8dlNfdFzjhfwk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "47842512707-b59h6k5pr2nv22oacs32ntelu4ni9nhc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "47842512707-4bsc63q9mu8qr3kq4ad15k1tonhmmcql.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.tsal.vistara",
+                "app_store_id": "992877072"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:47842512707:android:3e49e898377ac956",
+        "android_client_info": {
+          "package_name": "com.vistara.tsal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "47842512707-1hv9h131h9d7hpmmvfv1hcot68jpnlp3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vistara.tsal",
+            "certificate_hash": "9f70d08f9afcec62e3a516742596bf93f506c908"
+          }
+        },
+        {
+          "client_id": "47842512707-b0a05j66dbdmfnsqlsaql02ju72oir1s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vistara.tsal",
+            "certificate_hash": "ae2673a8b8faeac5fe402e53ddf0adee74c0984d"
+          }
+        },
+        {
+          "client_id": "47842512707-eoaj0pvj69d0u389nbojuv7jskllo8rl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vistara.tsal",
+            "certificate_hash": "a2ef68b372e1df7ed26664e8b857db4a0e313b1d"
+          }
+        },
+        {
+          "client_id": "47842512707-gei7kvjiq0n0v3gr7go5rln1pn0b91u7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vistara.tsal",
+            "certificate_hash": "5b75e1420eec47d3f3d3617d1809ee06ba829b6d"
+          }
+        },
+        {
+          "client_id": "47842512707-ivf0tv4f0rk05tfe44cjlpk867fqiffl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vistara.tsal",
+            "certificate_hash": "bf8117f75d7b8f5232632aa677981b8683531e9f"
+          }
+        },
+        {
+          "client_id": "47842512707-slnni8i2qd1259d0fup9rqlm8t8mv95u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vistara.tsal",
+            "certificate_hash": "b641096dd304b13a2df2bd758b853567942aef0f"
+          }
+        },
+        {
+          "client_id": "47842512707-u66vr35lrjs2fav37jh2ctkr12naguib.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vistara.tsal",
+            "certificate_hash": "b0b6b31a9c3326dd63f72e969e06fb18ac0ed00e"
+          }
+        },
+        {
+          "client_id": "47842512707-g9smlo7l8hf38f08km9t2unohb62ji5a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAG3wOlMjckcKwMtZfiaP8dlNfdFzjhfwk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "47842512707-b59h6k5pr2nv22oacs32ntelu4ni9nhc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "47842512707-4bsc63q9mu8qr3kq4ad15k1tonhmmcql.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.tsal.vistara",
+                "app_store_id": "992877072"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:47842512707:android:bb67ecdebd4b0f2497e9f6",
+        "android_client_info": {
+          "package_name": "com.vistara.tsal.uat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "47842512707-bh3fv87v98o8ma7ms511i191hue1192o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vistara.tsal.uat",
+            "certificate_hash": "a2ef68b372e1df7ed26664e8b857db4a0e313b1d"
+          }
+        },
+        {
+          "client_id": "47842512707-bva47h1d4bp0o1qe7j6go01i8ad74dkl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vistara.tsal.uat",
+            "certificate_hash": "ae2673a8b8faeac5fe402e53ddf0adee74c0984d"
+          }
+        },
+        {
+          "client_id": "47842512707-cc0elrut4mhi4vp6ns6lmlsr1p453o2o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vistara.tsal.uat",
+            "certificate_hash": "bf8117f75d7b8f5232632aa677981b8683531e9f"
+          }
+        },
+        {
+          "client_id": "47842512707-fc997u0gidbbffhrc6ilqmu4iig3pe4s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vistara.tsal.uat",
+            "certificate_hash": "b641096dd304b13a2df2bd758b853567942aef0f"
+          }
+        },
+        {
+          "client_id": "47842512707-grbl49b95qof42qm1qecgcsbifk0n4id.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vistara.tsal.uat",
+            "certificate_hash": "9f70d08f9afcec62e3a516742596bf93f506c908"
+          }
+        },
+        {
+          "client_id": "47842512707-mt0ep08tkab2squqsl3eae5e6po0ls0l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vistara.tsal.uat",
+            "certificate_hash": "73ef0c0ffb86ebc5f198b07c7eda3e851e8afea5"
+          }
+        },
+        {
+          "client_id": "47842512707-g9smlo7l8hf38f08km9t2unohb62ji5a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAG3wOlMjckcKwMtZfiaP8dlNfdFzjhfwk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "47842512707-b59h6k5pr2nv22oacs32ntelu4ni9nhc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "47842512707-4bsc63q9mu8qr3kq4ad15k1tonhmmcql.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.tsal.vistara",
+                "app_store_id": "992877072"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

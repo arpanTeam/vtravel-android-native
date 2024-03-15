@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="#DAA520"
+            app:tabIndicatorHeight="3dp"
+            app:tabMode="fixed"
+            android:visibility="gone"/>
+
+
+        <RelativeLayout
+            android:id="@+id/topRl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_shape"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp">
+
+            <RelativeLayout
+                android:id="@+id/welcomeRl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/driverName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/pickUp"
+                    android:text="Welcome ****"
+                    android:textColor="#323232"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/pickUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Pick***"
+                    android:textColor="#323232"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/speedRl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/welcomeRl"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toLeftOf="@+id/timeRl">
+
+                <TextView
+                    android:id="@+id/gaadiNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="DL2CR**"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/speed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/gaadiNum"
+                    android:text="8741"
+                    android:textColor="#000000"
+                    android:textSize="13sp"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/speedRl"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="addres**"
+                android:textColor="#000000"
+                android:textSize="13sp" />
+
+
+
+            <ImageView
+                android:id="@+id/sosIcon"
+                android:layout_width="@dimen/image_size"
+                android:layout_height="@dimen/image_size"
+                android:layout_below="@+id/address"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/sos"
+                android:visibility="gone"/>
+
+
+            <RelativeLayout
+                android:id="@+id/timeRl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/welcomeRl"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="3dp">
+
+                <ImageView
+                    android:id="@+id/clock"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/watch" />
+
+                <TextView
+                    android:id="@+id/dateTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/clock"
+                    android:text="*****"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/timeTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/dateTv"
+                    android:text="*****"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tripRl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/timeRl"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/otpTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:paddingRight="2dp"
+                    android:text="Trip id*****"
+                    android:textColor="#323232"
+                    android:textSize="13sp"
+                    android:textStyle="italic" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/travellerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/travellerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#323232"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/travallerAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/travellerName"
+                android:layout_marginTop="5dp"
+                android:textColor="#323232"
+                android:textSize="15sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/travallerAddress"
+                android:paddingBottom="3dp"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:id="@+id/empCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/noTrip"
+                    android:textColor="#323232"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+
+                <TextView
+                    android:id="@+id/noTrip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="2dp"
+                    android:text="No Trip Found"
+                    android:textColor="#323232"
+                    android:textSize="15sp"
+                    android:textStyle="italic" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+        <!-- </android.support.v7.widget.CardView>-->
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/appbar"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:orientation="horizontal"
+        android:weightSum="20">
+
+
+        <RelativeLayout
+            android:id="@+id/sosRl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="9.95"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:onClick="sos">
+
+            <ImageView
+                android:id="@+id/sosImage"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/car_flag" />
+
+            <TextView
+                android:id="@+id/sosText"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/sosImage"
+                android:gravity="center"
+                android:text="SOS"
+                android:textColor="#ffffff"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".1"
+            android:background="#ffffff" />
+
+        <RelativeLayout
+            android:id="@+id/readyToBoardRl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_weight="9.95">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/readyToBoardFrame"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/readyToBoard"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/suitcaseIV"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/suitcase" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:text="Ready To Board"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/suitcaseIV"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+<!--                <RelativeLayout-->
+<!--                    android:id="@+id/safeReach"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:gravity="center">-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/safeReachIV"-->
+<!--                        android:layout_width="30dp"-->
+<!--                        android:layout_height="30dp"-->
+<!--                        android:background="@drawable/safe_reach" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="30dp"-->
+<!--                        android:gravity="center"-->
+<!--                        android:layout_toRightOf="@+id/safeReachIV"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:text="Reached Safe"-->
+<!--                        android:textColor="#ffffff"-->
+<!--                        android:textSize="15sp"-->
+<!--                        android:textStyle="bold" />-->
+
+<!--                </RelativeLayout>-->
+
+
+                <RelativeLayout
+                    android:id="@+id/travelersRl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/traveler_icon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/travelers_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:id="@+id/travellersCountId"
+                        android:gravity="center"
+                        android:layout_toRightOf="@+id/traveler_icon"
+                        android:layout_marginLeft="10dp"
+                        android:text="Travelers"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+            </FrameLayout>
+
+            <!--<TextView-->
+                <!--android:id="@+id/travellersCountId"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:gravity="center"-->
+                <!--android:textColor="#FFFFFF"-->
+                <!--android:textSize="15sp"-->
+                <!--android:textStyle="bold"-->
+                <!--app:elevation="5dp"/>-->
+
+
+            <!--android:shadowColor="#909090"-->
+            <!--android:shadowDx="-2"-->
+            <!--android:shadowDy="1"-->
+            <!--android:shadowRadius="3"-->
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/tripComp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:background="#80000000"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trip Completed"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomLayut"
+        android:layout_below="@+id/ll1"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/ll1"
+        android:visibility="gone">
+        <RelativeLayout
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            >
+            <ImageView
+                android:id="@+id/ImageView01"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:src="@drawable/duration_box"
+                android:tint="@color/colorPrimary"
+                android:scaleType="fitXY"/>
+            <ImageView
+                android:id="@+id/ImageView02"
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:src="@drawable/car_icon1"
+                android:layout_below="@+id/ImageView01"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView android:id="@+id/text_view"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textColor="#FFF"
+                android:padding="1dp"
+                android:gravity="center"
+                android:textSize="12sp"/>
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
+
+<!--    <FrameLayout-->
+<!--        android:id="@+id/framelayoutDrop"-->
+<!--        android:layout_width="70dp"-->
+<!--        android:layout_height="80dp"-->
+<!--        android:layout_below="@+id/ll1"-->
+<!--        android:visibility="gone">-->
+<!--        <RelativeLayout-->
+<!--            android:layout_width="70dp"-->
+<!--            android:layout_height="80dp"-->
+<!--            >-->
+<!--            <ImageView-->
+<!--                android:id="@+id/ImageView03"-->
+<!--                android:layout_width="70dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:src="@drawable/duration_box"-->
+<!--                android:tint="@color/colorPrimary"-->
+<!--                android:scaleType="fitXY"/>-->
+<!--            <ImageView-->
+<!--                android:id="@+id/ImageView04"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:layout_width="30dp"-->
+<!--                android:src="@drawable/car_icon1"-->
+<!--                android:layout_below="@+id/ImageView03"-->
+<!--                android:layout_centerHorizontal="true"/>-->
+
+<!--            <TextView android:id="@+id/text_view_drop"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="35dp"-->
+<!--                android:textColor="#FFF"-->
+<!--                android:padding="1dp"-->
+<!--                android:gravity="center"-->
+<!--                android:textSize="12sp"/>-->
+<!--        </RelativeLayout>-->
+
+<!--    </FrameLayout>-->
+
+    <LinearLayout
+        android:id="@+id/bottomLayut"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:background="@drawable/rectangle_shape"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/callDeskRl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/callDeskImage"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:background="@drawable/car_flag" />
+
+            <TextView
+                android:id="@+id/callDeskText"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/callDeskImage"
+                android:gravity="center"
+                android:text="Call Travel Desk"
+                android:textColor="#ffffff"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".01"
+            android:background="#ffffff" />
+
+        <RelativeLayout
+            android:id="@+id/callToDriverRl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/callDriverImage"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:background="@drawable/car_flag" />
+
+            <TextView
+                android:id="@+id/callDriverText"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/callDriverImage"
+                android:gravity="center"
+                android:text="Call Driver"
+                android:textColor="#ffffff"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".01"
+            android:background="#ffffff" />
+
+        <RelativeLayout
+            android:id="@+id/feedbackRl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/disable_button_color"
+            android:clickable="false"
+            android:focusable="false"
+            android:gravity="center"
+            android:onClick="feedback">
+
+            <ImageView
+                android:id="@+id/tripImage"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:background="@drawable/star"
+                android:clickable="false"/>
+
+            <TextView
+                android:id="@+id/tripText"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tripImage"
+                android:gravity="center"
+                android:text="Feedback"
+                android:textColor="#ffffff"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:clickable="false"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

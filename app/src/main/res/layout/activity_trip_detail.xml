@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id = "@+id/relLayTopId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id = "@+id/textViewTripDateAndTimeId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="4dp"
+                    android:text = "12/03/2019, 9:54 AM"
+                    android:layout_gravity="center|start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingTop="15dp"
+                    android:textColor="#333333"/>
+
+
+                <TextView
+                    android:layout_below="@+id/textViewTripDateAndTimeId"
+                    android:id = "@+id/textViewDriverVehicleId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="4dp"
+                    android:text = "Maruti Suzuki Swift Dezire"
+                    android:layout_gravity="center|start"
+                    android:textSize="14sp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="15dp"
+                    android:textColor="#666666"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+            <View
+                android:id = "@+id/view1Id"
+                android:layout_below="@+id/relLayTopId"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#d3d3d3"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </View>
+
+            <LinearLayout
+                android:id = "@+id/linearLaySecondId"
+                android:layout_below="@+id/view1Id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center|start"
+                        android:src="@drawable/source"
+                        android:scaleType="fitCenter"/>
+
+                    <TextView
+                        android:id = "@+id/textViewPickUpAddressId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="4dp"
+                        android:text = "A 207 Street No 7 , Meet Nagar , Shahdara - 110094"
+                        android:layout_gravity="center|start"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center|start"
+                        android:background="@drawable/line"
+                        android:visibility="visible"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|start"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center|start"
+                        android:src="@drawable/destination"
+                        android:scaleType="fitCenter"/>
+
+                    <TextView
+                        android:id = "@+id/textViewDropAddressId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="4dp"
+                        android:text = "A 207 Street No 7 , Meet Nagar , Shahdara - 110094"
+                        android:layout_gravity="center|start"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:id = "@+id/view2Id"
+                android:layout_below="@+id/linearLaySecondId"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#d3d3d3"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+            </View>
+
+            <RelativeLayout
+                android:id = "@+id/relLayFellowTravellersId"
+                android:layout_below ="@+id/view2Id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp">
+                <RelativeLayout
+                    android:id = "@+id/relLayTravellersCountId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id = "@+id/textViewTravellersId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text = "Travellers"
+                        android:paddingStart="10dp"
+                        android:fontFamily="serif"
+                        android:textSize="19sp"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerInParent="true"/>
+
+                    <TextView
+                        android:id = "@+id/textViewTravellersCountId"
+                        android:layout_toEndOf="@+id/textViewTravellersId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="5dp"
+                        android:fontFamily="serif"
+                        android:textSize="19sp"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:layout_centerInParent="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_below="@+id/relLayTravellersCountId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp">
+                    <TextView
+                        android:id = "@+id/textViewTravellersNameId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="20dp"
+                        android:fontFamily="serif"
+                        android:textSize="14sp"
+                        android:textColor="#666666"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+            <View
+                android:id = "@+id/view3Id"
+                android:layout_below="@+id/relLayFellowTravellersId"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#d3d3d3"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+            </View>
+
+            <RelativeLayout
+                android:id = "@+id/relLayFeedbackId"
+                android:layout_below ="@+id/view3Id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id = "@+id/textViewFeedbackId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text = "Feedback"
+                    android:paddingStart="10dp"
+                    android:fontFamily="serif"
+                    android:textSize="19sp"
+                    android:textColor="@color/colorPrimary"
+                    android:paddingTop="15dp"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:id = "@+id/linearLayRatingId"
+                    android:layout_below="@+id/textViewFeedbackId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:text = "You have rated "
+                        android:layout_gravity="center|start"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#666666"/>
+
+                    <LinearLayout
+                        android:id = "@+id/linearLayoutRatingId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center|end"
+                        android:layout_marginEnd="15dp">
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id = "@+id/linearLaySelectedValuesId"
+                    android:layout_below="@+id/linearLayRatingId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id = "@+id/linearLayoutSelectedValuesFirstId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:visibility="gone">
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id = "@+id/linearLayoutSelectedValuesSecondId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:visibility="gone">
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id = "@+id/linearLayMessageFeedbackId"
+                    android:layout_below="@+id/linearLaySelectedValuesId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+
+                    <ImageView
+                        android:id = "@+id/imageViewfeedbackMsgId"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/send"
+                        android:scaleType="fitCenter"
+                        android:layout_marginStart="10dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerInParent="true"/>
+
+                    <TextView
+                        android:id = "@+id/textViewMsg1Id"
+                        android:layout_toEndOf="@+id/imageViewfeedbackMsgId"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="10dp"
+                        android:textSize="13sp"
+                        android:fontFamily="serif"
+                        android:textColor="#333333"
+                        android:text = "Your Comment"
+                        android:layout_centerInParent="true"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id = "@+id/textViewMsgId"
+                        android:layout_toEndOf="@+id/textViewMsg1Id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:textSize="13sp"
+                        android:textColor="#666666"
+                        android:fontFamily="serif"
+                        android:layout_centerInParent="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id = "@+id/linearLayFeedbackReplyId"
+                    android:layout_below="@+id/linearLayMessageFeedbackId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="15dp">
+
+                    <ImageView
+                        android:id = "@+id/imageViewReplyMsgId"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/received"
+                        android:scaleType="fitCenter"
+                        android:layout_marginStart="10dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerInParent="true"/>
+
+                    <TextView
+                        android:id = "@+id/textViewMsg2Id"
+                        android:layout_toEndOf="@+id/imageViewReplyMsgId"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="10dp"
+                        android:textSize="13sp"
+                        android:textColor="#333333"
+                        android:fontFamily="serif"
+                        android:text = "FMSS Action"
+                        android:layout_centerInParent="true"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id = "@+id/textViewMsgReplyId"
+                        android:layout_toEndOf="@+id/textViewMsg2Id"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:textSize="13sp"
+                        android:textColor="#666666"
+                        android:fontFamily="serif"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

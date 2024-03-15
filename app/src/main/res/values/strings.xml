@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">V-Travel</string>
+    <string name="title_activity_home_page">HomePage</string>
+    <string name="drawer_open">open</string>
+    <string name="drawer_closed">close</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="internet_connection">Please connect to internet</string>
+    <string name="error_message">Sorry for inconvenience. Please try again later</string>
+</resources>

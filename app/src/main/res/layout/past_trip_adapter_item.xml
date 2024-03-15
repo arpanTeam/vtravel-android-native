@@ -1,0 +1,236 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="5dp"
+    android:paddingEnd="5dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:gravity="center">
+
+
+            <RelativeLayout
+                android:id = "@+id/relLayTopId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+
+                <RelativeLayout
+                    android:id="@+id/relLayDateId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <RelativeLayout
+                        android:id = "@+id/relLayDate1Id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id = "@+id/textViewDateId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="8"
+                            android:textSize="45sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerInParent="true"/>
+
+                        <RelativeLayout
+                            android:layout_toEndOf="@+id/textViewDateId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+
+                            <TextView
+                                android:id = "@+id/textViewMonthId"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="June"
+                                android:textSize="14sp"
+                                android:textColor="@color/colorPrimary"/>
+
+                            <TextView
+                                android:id = "@+id/textViewYearId"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/textViewMonthId"
+                                android:text="2018"
+                                android:textSize="14sp"
+                                android:textColor="@color/colorPrimary"/>
+
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/relLayTripDetailId"
+                    android:layout_toEndOf="@+id/relLayDateId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="2"
+                    android:layout_gravity="center"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:layout_centerInParent="true">
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id = "@+id/textViewSourceAddressId"
+                            android:layout_weight="0.85"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:textColor="#333333" />
+
+                        <RelativeLayout
+                            android:layout_weight="0.3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src = "@drawable/arrow"
+                                android:scaleType="fitCenter"/>
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id = "@+id/textViewDestAddressId"
+                            android:layout_weight="0.85"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:textColor="#333333" />
+
+
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:weightSum="2">
+
+
+
+                        <TextView
+                            android:id = "@+id/textViewDestTimeId"
+                            android:layout_weight="0.85"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="#666666" />
+
+                        <RelativeLayout
+                            android:layout_weight="0.3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center">
+
+                            <!--<ImageView-->
+                                <!--android:layout_width="30dp"-->
+                                <!--android:layout_height="30dp"-->
+                                <!--android:src = "@drawable/arrow"-->
+                                <!--android:scaleType="fitCenter"/>-->
+
+                        </RelativeLayout>
+
+
+                        <TextView
+                            android:id = "@+id/textViewPickUpTimeId"
+                            android:layout_weight="0.85"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="#666666" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_below="@+id/relLayTopId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center|start"
+        android:layout_marginTop="5dp">
+
+
+        <TextView
+            android:id = "@+id/textViewTripTypeId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pick Up"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id = "@+id/driverVehicleId"
+            android:layout_width="wrap_content"
+            android:gravity="center|start"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#333333" />
+
+
+        <TextView
+            android:id = "@+id/driverNameId"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:textAllCaps="true"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

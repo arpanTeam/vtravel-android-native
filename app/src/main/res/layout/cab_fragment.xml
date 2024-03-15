@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <!--  <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+-->
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <FrameLayout
+            android:id="@+id/framelayout"
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:visibility="gone">
+            <RelativeLayout
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:gravity="center_horizontal">
+                <ImageView
+                    android:id="@+id/ImageView01"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/duration_box"
+                    android:tint="@color/colorPrimary"
+                    android:scaleType="fitXY"/>
+                <ImageView
+                    android:id="@+id/ImageView02"
+                    android:layout_height="30dp"
+                    android:layout_width="30dp"
+                    android:src="@drawable/car_icon1"
+                    android:layout_below="@+id/ImageView01"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView android:id="@+id/text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:textColor="#FFF"
+                    android:padding="1dp"
+                    android:gravity="center"
+                    android:textSize="12sp"/>
+            </RelativeLayout>
+
+        </FrameLayout>
+
+
+<!--    <FrameLayout-->
+<!--        android:id="@+id/framelayoutDrop"-->
+<!--        android:layout_width="70dp"-->
+<!--        android:layout_height="80dp"-->
+<!--        android:layout_below="@+id/ll1"-->
+<!--        android:visibility="gone">-->
+<!--        <RelativeLayout-->
+<!--            android:layout_width="70dp"-->
+<!--            android:layout_height="80dp"-->
+<!--            >-->
+<!--            <ImageView-->
+<!--                android:id="@+id/ImageView03"-->
+<!--                android:layout_width="70dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:src="@drawable/duration_box"-->
+<!--                android:tint="@color/colorPrimary"-->
+<!--                android:scaleType="fitXY"/>-->
+<!--            <ImageView-->
+<!--                android:id="@+id/ImageView04"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:layout_width="30dp"-->
+<!--                android:src="@drawable/car_icon1"-->
+<!--                android:layout_below="@+id/ImageView03"-->
+<!--                android:layout_centerHorizontal="true"/>-->
+
+<!--            <TextView android:id="@+id/text_view_drop"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="35dp"-->
+<!--                android:textColor="#FFF"-->
+<!--                android:padding="1dp"-->
+<!--                android:gravity="center"-->
+<!--                android:textSize="12sp"/>-->
+<!--        </RelativeLayout>-->
+
+<!--    </FrameLayout>-->
+
+    <!--       <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:orientation="horizontal"
+                android:weightSum="20">
+
+
+                <RelativeLayout
+                    android:id="@+id/sosRl"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="9.95"
+                    android:background="@color/colorPrimary"
+                    android:gravity="center"
+                    android:onClick="sos">
+
+                    <ImageView
+                        android:id="@+id/sosImage"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/car_flag" />
+
+                    <TextView
+                        android:id="@+id/sosText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/sosImage"
+                        android:gravity="center"
+                        android:text="SOS"
+                        android:textColor="#ffffff"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".1"
+                    android:background="#ffffff" />
+
+                <RelativeLayout
+                    android:id="@+id/readyToBoardRl"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimary"
+                    android:layout_weight="9.95"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:id="@+id/readyToBoard"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:id="@+id/suitcaseIV"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/suitcase" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:gravity="center"
+                                android:text="Ready To Board"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@+id/suitcaseIV"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/safeReach"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/readyToBoard"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:gravity="center"
+                                android:text="Reached Safe"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                    </FrameLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>-->
+
+</RelativeLayout>

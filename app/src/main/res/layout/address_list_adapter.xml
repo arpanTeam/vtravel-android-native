@@ -1,0 +1,171 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    card_view:cardCornerRadius="3dp"
+    card_view:cardElevation="4dp"
+    card_view:cardUseCompatPadding="true">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="5dp">
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/time"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#505050"
+            android:text="Vijay Kumar Singh"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mobileNoView"
+            android:layout_below="@+id/name">
+            <TextView
+                android:id="@+id/mobileNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#505050"/>
+            <ImageView
+                android:id="@+id/imgCallIconId"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toEndOf="@+id/mobileNo"
+                android:scaleType="fitCenter"
+                android:src="@drawable/call" />
+            <TextView
+                android:id="@+id/not_reported_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textColor="#FF0000"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp"
+                android:layout_alignParentRight="true"
+                android:textSize="14sp"/>
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/navigate"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+        <ImageView
+            android:id="@+id/navigate"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/navigate_icon"/>
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mobileNoView"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:textColor="#707070"/>
+
+
+        <RelativeLayout
+            android:id="@+id/buttonLay1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/address"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <FrameLayout
+                android:id="@+id/waitingButtonRl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp">
+
+                <Button
+                    android:id="@+id/arrivingButton1"
+                    android:layout_width="90dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/signupbutton"
+                    android:gravity="center"
+                    android:onClick="arriving"
+                    android:text="Arrived"
+                    android:textColor="@color/black"
+                    android:textSize="11dp"
+                    android:visibility="visible" />
+
+
+                <Button
+                    android:id="@+id/waitingButton"
+                    android:layout_width="90dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/signupbutton"
+                    android:elevation="5dp"
+                    android:gravity="center"
+                    android:onClick="waiting"
+                    android:text="Waiting"
+                    android:textColor="@color/black"
+                    android:textSize="11dp"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/notRepordButton"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/signupbutton"
+                android:gravity="center"
+                android:onClick="notReported"
+                android:text="Not Reported"
+                android:textColor="@color/black"
+                android:textSize="10dp" />
+
+            <Button
+                android:id="@+id/pickedUpButton"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/signupbutton"
+                android:gravity="center"
+                android:onClick="pickUp"
+                android:text="Picked Up"
+                android:textColor="@color/black"
+                android:textSize="11dp" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
